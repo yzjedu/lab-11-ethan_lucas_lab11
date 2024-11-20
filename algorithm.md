@@ -4,7 +4,7 @@ High Level Tasks:
 
 1. Ask the user for an input file 
 - Error check the input file
-3. Ask the user for the name of an output file
+3. Ask user for the name of an output file
 
 4. Read the initial file (morse code translation)
 4. Change the morse code translation into a table 
