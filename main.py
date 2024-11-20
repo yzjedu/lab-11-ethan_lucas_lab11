@@ -14,3 +14,4 @@ def read_file_to_table(filename):
         line = row.split()
         m_table[line[1]] = line[0]
     return m_table
+
