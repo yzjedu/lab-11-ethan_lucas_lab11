@@ -8,6 +8,9 @@
 
 import os
 
+# Purpose: Checks if prompt exists as a file
+# Parameter: prompt
+# Return: filename
 def input_filename(prompt):
     # Prompt the user for a file name and ensure it exists
     filename = input(prompt).strip()
@@ -16,6 +19,9 @@ def input_filename(prompt):
         filename = input(prompt).strip()
     return filename
 
+# Purpose: Read a file into a table
+# Parameter: filename
+# Return: m_table
 def read_file_to_table(filename):
     # Open the Morse code translation file
     file_data = open(filename, 'r')
@@ -31,7 +37,9 @@ def read_file_to_table(filename):
     print("Morse Code Dictionary:", m_table)
     return m_table
 
-
+# Purpose: Convert the file in morse code into english
+# Parameter: input_file, output_file, morse_dict
+# Return: none
 def convert_morse_to_english(input_file, output_file, morse_dict):
     # Convert the file written in Morse code into plain English
     infile = open(input_file, 'r')
@@ -47,6 +55,9 @@ def convert_morse_to_english(input_file, output_file, morse_dict):
     infile.close()
     outfile.close()
 
+# Purpose: Runs the main code
+# Parameter: none
+# Return: none
 def main():
     # Main function to run the Morse code translator
     print("Welcome to the Morse Code Translator!")
